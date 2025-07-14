@@ -6,26 +6,26 @@ This project is a complete Streamlit web application that provides real-time day
 
 ## What the Application Does
 
-The `dsa_app.py` file contains a comprehensive day trading analytics application with the following features:
+The `app.py` file contains a comprehensive day trading analytics application with the following features:
 
 ### Core Functionality
 
 1. **Real-time Stock Data Analysis**: Fetches and analyzes stock data from Yahoo Finance for any valid ticker symbol
-2. **AI-Powered Insights**: Uses multiple AI agents to provide analyst recommendations and latest news
+2. **AI-Powered Insights**: Uses multiple AI agents to provide analyst recommendations and the latest news
 3. **Interactive Visualizations**: Generates multiple chart types for comprehensive market analysis
 4. **User-Friendly Interface**: Built with Streamlit for easy interaction
 
 ### Key Features
 
 #### Data Analytics Functions:
-- `dsa_extrai_dados()`: Extracts historical stock data for a specified period (default: 6 months)
-- `dsa_plot_stock_price()`: Creates interactive line charts showing stock price movements
-- `dsa_plot_candlestick()`: Generates candlestick charts for detailed price analysis
-- `dsa_plot_media_movel()`: Displays moving averages (SMA and EMA) for trend analysis
-- `dsa_plot_volume()`: Shows trading volume patterns
+- `extrai_dados()`: Extracts historical stock data for a specified period (default: 6 months)
+- `plot_stock_price()`: Creates interactive line charts showing stock price movements
+- `plot_candlestick()`: Generates candlestick charts for detailed price analysis
+- `plot_media_movel()`: Displays moving averages (SMA and EMA) for trend analysis
+- `plot_volume()`: Shows trading volume patterns
 
 #### AI Agent System:
-- **Web Search Agent**: Performs web searches for latest market news and information
+- **Web Search Agent**: Performs web searches for the latest market news and information
 - **Financial Agent**: Provides analyst recommendations, stock fundamentals, and company news
 - **Multi-Agent Coordinator**: Combines insights from both agents for comprehensive analysis
 
@@ -57,8 +57,8 @@ The `dsa_app.py` file contains a comprehensive day trading analytics application
 
 2. **Create Virtual Environment**:
    ```bash
-   conda create --name dsadeployai python=3.12
-   conda activate dsadeployai
+   conda create --name deployai python=3.12
+   conda activate deployai
    ```
 
 3. **Install Dependencies**:
@@ -69,7 +69,7 @@ The `dsa_app.py` file contains a comprehensive day trading analytics application
 
 4. **Run the Application**:
    ```bash
-   streamlit run dsa_app.py
+   streamlit run app.py
    ```
 
 5. **Access the Application**: Open your web browser and navigate to the provided local URL
@@ -113,7 +113,7 @@ For questions and support, contact: suporte@datascienceacademy.com.br
 ## Project Structure
 
 ```
-├── dsa_app.py          # Main application file
+├── app.py          # Main application file
 ├── requirements.txt    # Python dependencies
 ├── README.md          # This documentation
 └── .env               # Environment variables (API keys)
@@ -130,7 +130,7 @@ Make sure to set up your environment variables:
 - The application uses a 6-month historical data period by default
 - All AI responses are processed to remove technical debugging information
 - The interface is optimized for both desktop and mobile access
-- AWS deployment requires proper security configuration for production use
+- AWS deployment requires a proper security configuration for production use
 
 ---
 
